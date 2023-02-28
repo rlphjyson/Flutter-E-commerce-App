@@ -82,16 +82,19 @@ class _CartCard extends State<CartCard> {
                   height: 100,
                 ),
                 Spacer(),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      productName,
-                      style: TextStyles.mbTextBoldBlack,
-                    ),
-                    SizedBox(height: 10),
-                    Text(productPrice, style: TextStyles.mbTextBoldBlack),
-                  ],
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.3,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        productName,
+                        style: TextStyles.mbTextBoldBlack,
+                      ),
+                      SizedBox(height: 10),
+                      Text(productPrice, style: TextStyles.mbTextBoldBlack),
+                    ],
+                  ),
                 ),
               ]),
             ),
