@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 
 import '../constants/textstyles.dart';
 
-class ProductsCard extends StatefulWidget {
+class CartCard extends StatefulWidget {
   final String label;
   final VoidCallback onClick;
-  const ProductsCard({Key? key, required this.label, required this.onClick})
+  const CartCard({Key? key, required this.label, required this.onClick})
       : super(key: key);
 
   @override
-  State<ProductsCard> createState() => _ProductsCard();
+  State<CartCard> createState() => _CartCard();
 }
 
-class _ProductsCard extends State<ProductsCard> {
+class _CartCard extends State<CartCard> {
   String productPic = '';
   String productPrice = '';
   String productName = '';
@@ -70,23 +70,29 @@ class _ProductsCard extends State<ProductsCard> {
                 ),
               ],
             ),
-            height: 150,
-            width: 150,
+            height: 100,
+            width: MediaQuery.of(context).size.width * 0.8,
             child: Padding(
-              padding: EdgeInsets.all(10),
-              child: Column(children: [
+              padding: const EdgeInsets.only(
+                  top: 10, left: 10, right: 20, bottom: 10),
+              child: Row(children: [
                 Image.asset(
                   'assets/image/$productPic.jpg',
-                  width: 130,
-                  height: 80,
+                  width: 100,
+                  height: 100,
                 ),
                 Spacer(),
-                Text(
-                  productName,
-                  style: TextStyles.mbTextBoldBlack,
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      productName,
+                      style: TextStyles.mbTextBoldBlack,
+                    ),
+                    SizedBox(height: 10),
+                    Text(productPrice, style: TextStyles.mbTextBoldBlack),
+                  ],
                 ),
-                SizedBox(height: 10),
-                Text(productPrice, style: TextStyles.mbTextBoldBlack),
               ]),
             ),
           ),

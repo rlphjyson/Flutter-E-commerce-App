@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterexam/screens/cart_screen.dart';
 
+import '../screens/account_screen.dart';
 import '../screens/shop_screen.dart';
 import '../values/colors.dart';
 
@@ -14,10 +16,8 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     ShopScreen(),
-    ShopScreen(),
-    ShopScreen(),
-    // CartScreen(),
-    // AccountScreen(),
+    CartScreen(),
+    AccountScreen(),
   ];
 
   void _onItemTapped(int index) {

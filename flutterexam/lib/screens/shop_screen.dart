@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterexam/screens/product_info.dart';
 
 import '../constants/textstyles.dart';
 import '../widgets/products_card.dart';
@@ -13,7 +14,6 @@ class ShopScreen extends StatefulWidget {
 class _ShopScreenState extends State<ShopScreen> {
   @override
   Widget build(BuildContext context) {
-    final scrollController = ScrollController();
     return SizedBox(
       height: MediaQuery.of(context).size.height,
       child: Column(
@@ -40,15 +40,29 @@ class _ShopScreenState extends State<ShopScreen> {
                   child: Column(
                     children: [
                       Row(
-                        children: const [
+                        children: [
                           ProductsCard(
                             label: 'shoe1',
+                            onClick: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ProductInfo(
+                                        label: 'shoe1',
+                                      )),
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           ProductsCard(
                             label: 'shoe2',
+                            onClick: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ProductInfo(
+                                        label: 'shoe2',
+                                      )),
+                            ),
                           ),
                         ],
                       ),
@@ -56,15 +70,29 @@ class _ShopScreenState extends State<ShopScreen> {
                         height: 10,
                       ),
                       Row(
-                        children: const [
+                        children: [
                           ProductsCard(
                             label: 'shoe3',
+                            onClick: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ProductInfo(
+                                        label: 'shoe3',
+                                      )),
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           ProductsCard(
                             label: 'shoe4',
+                            onClick: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ProductInfo(
+                                        label: 'shoe4',
+                                      )),
+                            ),
                           ),
                         ],
                       ),
@@ -83,39 +111,81 @@ class _ShopScreenState extends State<ShopScreen> {
                         padding:
                             const EdgeInsets.only(top: 10, left: 10, right: 10),
                         child: Row(
-                          children: const <Widget>[
+                          children: <Widget>[
                             ProductsCard(
                               label: 'shoe1',
+                              onClick: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ProductInfo(
+                                          label: 'shoe1',
+                                        )),
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             ProductsCard(
                               label: 'shoe2',
+                              onClick: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ProductInfo(
+                                          label: 'shoe2',
+                                        )),
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             ProductsCard(
                               label: 'shoe3',
+                              onClick: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ProductInfo(
+                                          label: 'shoe3',
+                                        )),
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             ProductsCard(
                               label: 'shoe4',
+                              onClick: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ProductInfo(
+                                          label: 'shoe4',
+                                        )),
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             ProductsCard(
                               label: 'shoe1',
+                              onClick: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ProductInfo(
+                                          label: 'shoe1',
+                                        )),
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             ProductsCard(
                               label: 'shoe2',
+                              onClick: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ProductInfo(
+                                          label: 'shoe2',
+                                        )),
+                              ),
                             ),
                           ],
                         ),

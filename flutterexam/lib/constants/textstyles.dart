@@ -8,21 +8,10 @@ abstract class TextStyles {
     color: CustomColor.blackColor,
   );
 
-  static const mbTitleGrey = TextStyle(
-    fontSize: 28,
-    color: Color.fromARGB(65, 0, 0, 0),
-  );
-
   static const mbTitleBlack = TextStyle(
     fontSize: 28,
     fontWeight: FontWeight.bold,
     color: Colors.black,
-  );
-
-  static const mbTitleWhite = TextStyle(
-    fontSize: 28,
-    fontWeight: FontWeight.bold,
-    color: Colors.white,
   );
 
   static const mbSubTitle = TextStyle(
@@ -30,10 +19,6 @@ abstract class TextStyles {
     fontSize: 17,
   );
 
-  static const mbSubTitleColored = TextStyle(
-    color: CustomColor.primaryColor,
-    fontSize: 17,
-  );
   static const mbSubTitleBoldBlack = TextStyle(
     color: Colors.black,
     fontWeight: FontWeight.bold,
@@ -45,29 +30,11 @@ abstract class TextStyles {
     fontSize: 17,
   );
 
-  static const mbSubTitleBold = TextStyle(
-    color: CustomColor.greyColor,
-    fontSize: 17,
-    fontWeight: FontWeight.bold,
-  );
-
   static const mbText = TextStyle(
     fontSize: 13,
     color: CustomColor.textColor,
   );
 
-  static const mbTextWhiteSmall = TextStyle(
-    fontSize: 10,
-    color: Colors.white,
-  );
-  static const mbTextWhite = TextStyle(
-    fontSize: 13,
-    color: Colors.white,
-  );
-  static const mbTextblack = TextStyle(
-    fontSize: 13,
-    color: Colors.black,
-  );
   static const mbTextBoldBlack = TextStyle(
     fontSize: 13,
     color: Colors.black,
