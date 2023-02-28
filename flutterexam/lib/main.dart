@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterexam/pages/home_page.dart';
 import 'package:flutterexam/pages/login_page.dart';
+import 'package:flutterexam/pages/register_page.dart';
 import 'package:flutterexam/values/colors.dart';
 
 void main() {
@@ -20,8 +22,8 @@ class MyApp extends StatelessWidget {
       home: const LoginPage(),
       routes: {
         '/login': (context) => const LoginPage(),
-        // '/register': (context) => const RegisterPage(),
-        // '/home': (context) => const HomePage(),
+        '/register': (context) => const RegisterPage(),
+        '/home': (context) => const HomePage(),
       },
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterexam/widgets/products_card.dart';
 
 import '../common/buttons.dart';
 import '../common/text_field.dart';
@@ -12,6 +13,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 50, right: 50, top: 100),
@@ -44,8 +46,7 @@ class LoginPage extends StatelessWidget {
                   const SizedBox(height: 55),
                   FullWidthButton(
                       buttonLabel: 'Login',
-                      onclick: () =>
-                          Navigator.pushNamed(context, '/confirmIdentity')),
+                      onclick: () => Navigator.pushNamed(context, '/home')),
                   const SizedBox(height: 30),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -58,6 +59,12 @@ class LoginPage extends StatelessWidget {
                             style: TextStyles.mbTextSecondaryColored),
                       ),
                     ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  const ProductsCard(
+                    label: 'shoe4',
                   ),
                 ],
               ),
